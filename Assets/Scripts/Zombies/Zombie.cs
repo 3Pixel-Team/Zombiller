@@ -95,7 +95,7 @@ public class Zombie : MonoBehaviour
     {
         navMeshAgent.speed = speed;
         navMeshAgent.isStopped = false;
-        navMeshAgent.SetDestination(target.position);
+        navMeshAgent.SetDestination(target.position - (transform.forward));
     }
 }
 
