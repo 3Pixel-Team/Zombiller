@@ -68,6 +68,7 @@
      <Compile Include="Assets\Scripts\GameUI\GameUI.cs" />
      <Compile Include="Assets\Scripts\Spawner\SpawnSystem.cs" />
      <Compile Include="Assets\Scripts\Player Controller\DamageComponent.cs" />
+     <Compile Include="Assets\Scripts\Crates\CrateOpenAnimation.cs" />
      <Compile Include="Assets\Scripts\Zombies\ZombieBehavior_Follow.cs" />
      <Compile Include="Assets\Scripts\Player Controller\DeathComponent.cs" />
      <Compile Include="Assets\Scripts\Player Controller\Weapon-Related\WeaponManager.cs" />
@@ -75,7 +76,6 @@
      <Compile Include="Assets\Scripts\GameUI\Crosshair.cs" />
      <Compile Include="Assets\Scripts\Player Controller\Weapon-Related\Weapon.cs" />
      <Compile Include="Assets\Scripts\Player Controller\Weapon-Related\Target.cs" />
-     <Compile Include="Assets\Scripts\Crates\CrateOpenAnimation.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />

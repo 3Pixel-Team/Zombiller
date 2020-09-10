@@ -14,7 +14,6 @@ namespace Scriptable_Objects
         public string note;
         public enum FireMode
         {
-            Single,
             SemiAuto,
             Auto
         }

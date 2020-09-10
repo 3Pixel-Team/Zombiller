@@ -30,8 +30,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player Controller/DeathComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player Controller/DamageComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Crates/CrateOpenAnimation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Weapon_SO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Zombie_SO.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Weapon_SO.cs" />
       </list>
     </option>
   </component>
@@ -83,6 +83,7 @@
       <workItem from="1598139203341" duration="3890000" />
       <workItem from="1598218691179" duration="2770000" />
       <workItem from="1599696741667" duration="4951000" />
+      <workItem from="1599742675464" duration="125000" />
     </task>
     <servers />
   </component>
