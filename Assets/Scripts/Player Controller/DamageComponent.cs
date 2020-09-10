@@ -8,8 +8,8 @@ namespace Player_Controller
     /// </summary>
     public class DamageComponent : MonoBehaviour
     {
-        // Repoduce the sound effects
-        void soundDamage(AudioClip damageSound, AudioSource player) => player.PlayOneShot(damageSound);
+        // Reproduce the sound effects
+        void SoundDamage(AudioClip damageSound, AudioSource player) => player.PlayOneShot(damageSound);
         
         // Reproduce the visual effects 
         void VfxDamage(ParticleSystem damageParticles) => damageParticles.Play();
