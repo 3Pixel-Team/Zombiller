@@ -12,6 +12,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player Controller/DeathComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Power-Tower/Assets/Scripts/UI/PauseMenu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Power-Tower/Assets/Scripts/UI/Settings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Power-Tower/Assets/Scripts/UI/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameUI/Settings/Settings.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -25,12 +29,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameUI/StartGameButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameUI/GameButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Prefabs/Zombie.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Weapon_SO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Player_SO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Crate_SO.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Zombie_SO.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player Controller/DamageComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player Controller/DeathComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player Controller/DamageComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Crates/CrateOpenAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Zombie_SO.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Weapon_SO.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameUI/Settings/Volume.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameUI/Settings/Settings.cs" />
       </list>
     </option>
   </component>
@@ -81,6 +88,9 @@
       <workItem from="1598138440555" duration="609000" />
       <workItem from="1598139203341" duration="3890000" />
       <workItem from="1598218691179" duration="2770000" />
+      <workItem from="1599696741667" duration="4951000" />
+      <workItem from="1599742675464" duration="125000" />
+      <workItem from="1600032600766" duration="742000" />
     </task>
     <servers />
   </component>

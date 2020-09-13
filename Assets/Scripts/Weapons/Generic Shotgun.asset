@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30f8bd2c31c54a8c8c50d4b4e5299cf4, type: 3}
+  m_Name: Generic Shotgun
+  m_EditorClassIdentifier: 
+  reloadSpeed: 1.7
+  fireRate: 0.5
+  clipSize: 5
+  maxAmmo: 17
+  damage: 90
+  note: "Shotgun with ~45 degrees radius and short range,\n maybe 1/6 or 1/4 or screen
+    size."
+  weaponFireMode: 0
