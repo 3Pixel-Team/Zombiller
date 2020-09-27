@@ -32,7 +32,8 @@ public class Weapon : MonoBehaviour
     [Header("Animation Clibs")]
     public AnimationClip animIdle;
     public AnimationClip animWalk, animRun;
-    
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -155,9 +156,8 @@ public class Weapon : MonoBehaviour
          DrawDefaultInspector(); // for other non-HideInInspector fields
  
          Weapon script = (Weapon)target;
- 
          // draw custom options
-         if (script.fireType == Weapon.FireType.Burst) // if bool is true, show other fields
+        if (script.fireType == Weapon.FireType.Burst) // if bool is true, show other fields
          {
             EditorGUILayout.LabelField("Burst Options", EditorStyles.boldLabel); 
             script.burstAmount = EditorGUILayout.IntField("Burst Amount", script.burstAmount);

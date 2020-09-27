@@ -4,13 +4,64 @@ public class WeaponManager : MonoBehaviour
 {
     [SerializeField]private GameObject[] weaponsPrefabs;
     public GameObject weaponHandlerObject, rayCastPoint;
+    [SerializeField] public Weapon currentWeapon;
     public int[] currentWeapons = {0, 1};
     [HideInInspector] public int selectedWeapon = 0;
     int i;
+    public int secondsPerAddingGrenade = 5; 
+
+    private int numberOfGrenades = 5; 
+    public int NumberOfGrenades
+    {
+        get
+        {
+            return this.numberOfGrenades;
+        }
+        set
+        {
+            if (value > this.MaxNumberOfGrenades)
+            {
+                this.numberOfGrenades = this.MaxNumberOfGrenades;
+
+            }
+            else if (value < 0)
+            {
+                this.numberOfGrenades = 0;
+
+            }
+            else
+            {
+                this.numberOfGrenades = value;
+            }
+        }
+    }
+
+    private int maxNumberOfGrenades = 5;
+    public int MaxNumberOfGrenades
+    {
+        get
+        {
+            return this.maxNumberOfGrenades;
+        }
+    }
+
+    public void UpdateGrenades()
+    {
+        this.NumberOfGrenades++;
+    }
+
+    public void DecreaseGrenades()
+    {
+        this.NumberOfGrenades--;
+    }
+
 
     // Start is called before the first frame update
     void Start()
     {
+
+        InvokeRepeating("UpdateGrenades", 0, secondsPerAddingGrenade);
+
         //instantiate weapon prefabs
         foreach (GameObject weapon in weaponsPrefabs){
             if (weapon.transform.GetComponent<Weapon>() != null){
@@ -60,6 +111,7 @@ public class WeaponManager : MonoBehaviour
                 weapon.gameObject.SetActive(false);
             } else {
                 weapon.gameObject.SetActive(true);
+                currentWeapon = weapon.GetComponent<Weapon>();
             }
             i++;
         }
