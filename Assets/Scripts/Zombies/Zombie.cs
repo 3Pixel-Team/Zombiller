@@ -40,14 +40,8 @@ public class Zombie : MonoBehaviour
 
     void Update()
     {
-        if (canFollow)
-        {
-            ProcessZombieBehaviour();
-        }
-        else
-        {
-            _navMeshAgent.isStopped = true;
-        }
+        if (canFollow) ProcessZombieBehaviour();
+        else _navMeshAgent.isStopped = true;
     }
 
     void ProcessZombieBehaviour()
@@ -75,13 +69,8 @@ public class Zombie : MonoBehaviour
     {
         // within enemy range but not so near
         if (_distanceFromTarget > runDistance && _distanceFromTarget <= walkDistance)
-        {
             ChaseTarget(target, walkSpeed);
-        }
-        else if (_distanceFromTarget <= runDistance)
-        {
-            ChaseTarget(target, runSpeed);
-        }
+        else if (_distanceFromTarget <= runDistance) ChaseTarget(target, runSpeed);
     }
 
 
