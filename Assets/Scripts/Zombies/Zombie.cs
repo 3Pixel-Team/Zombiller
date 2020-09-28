@@ -7,12 +7,12 @@ public class Zombie : MonoBehaviour
     //Calculation Variables
     [Header("Zombie Behaviour Stats")]
 
-    [SerializeField] private Transform _target;
-    [SerializeField] float _walkSpeed = 2f;
-    [SerializeField] float _runSpeed = 4f;
-    [SerializeField] float _stopDistance = 15f;
-    [SerializeField] float _walkDistance = 14f;
-    [SerializeField] float _runDistance = 6f;
+    [SerializeField] private Transform target;
+    [SerializeField] float walkSpeed = 2f;
+    [SerializeField] float runSpeed = 4f;
+    [SerializeField] float stopDistance = 15f;
+    [SerializeField] float walkDistance = 14f;
+    [SerializeField] float runDistance = 6f;
     [SerializeField] bool canFollow = true;
 
 
@@ -23,26 +23,20 @@ public class Zombie : MonoBehaviour
     private float _distanceFromTarget = Mathf.Infinity;
 
     // Component variables
-    NavMeshAgent navMeshAgent;
-    Rigidbody zombieRigidbody;
-    bool isProvoked = false;
+    NavMeshAgent _navMeshAgent;
+    Rigidbody _zombieRigidbody;
+    bool _isProvoked = false;
 
     private void Start()
     {
-        zombieRigidbody = GetComponent<Rigidbody>();
-        navMeshAgent = GetComponent<NavMeshAgent>();
-        _target =  GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        _zombieRigidbody = GetComponent<Rigidbody>();
+        _navMeshAgent = GetComponent<NavMeshAgent>();
+        target =  GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
-    private void OnEnable()
-    {
-        _numberOfZombies.OnEnabled();
-    }
+    private void OnEnable() => _numberOfZombies.OnEnabled();
 
-    private void OnDisable()
-    {
-        _numberOfZombies.OnDisabled();
-    }
+    private void OnDisable() => _numberOfZombies.OnDisabled();
 
     void Update()
     {
@@ -52,50 +46,50 @@ public class Zombie : MonoBehaviour
         }
         else
         {
-            navMeshAgent.isStopped = true;
+            _navMeshAgent.isStopped = true;
         }
     }
 
     void ProcessZombieBehaviour()
     {
-        _distanceFromTarget = Vector3.Distance(_target.position, transform.position);
+        _distanceFromTarget = Vector3.Distance(target.position, transform.position);
 
-        if(isProvoked)
+        if(_isProvoked)
         {
             EngageTarget();
         }
         // Within walk and run range --> engage target
-        if (_distanceFromTarget <= _stopDistance)
+        if (_distanceFromTarget <= stopDistance)
         {
-            isProvoked = true;
+            _isProvoked = true;
         }
         // Too far from target --> stop moving
-        if (_distanceFromTarget > _stopDistance)
+        if (_distanceFromTarget > stopDistance)
         {
-            isProvoked = false;
-            navMeshAgent.isStopped = true;
+            _isProvoked = false;
+            _navMeshAgent.isStopped = true;
         }
     }
 
     void EngageTarget()
     {
         // within enemy range but not so near
-        if (_distanceFromTarget > _runDistance && _distanceFromTarget <= _walkDistance)
+        if (_distanceFromTarget > runDistance && _distanceFromTarget <= walkDistance)
         {
-            ChaseTarget(_target, _walkSpeed);
+            ChaseTarget(target, walkSpeed);
         }
-        else if (_distanceFromTarget <= _runDistance)
+        else if (_distanceFromTarget <= runDistance)
         {
-            ChaseTarget(_target, _runSpeed);
+            ChaseTarget(target, runSpeed);
         }
     }
 
 
     private void ChaseTarget(Transform target, float speed)
     {
-        navMeshAgent.speed = speed;
-        navMeshAgent.isStopped = false;
-        navMeshAgent.SetDestination(target.position - (transform.forward));
+        _navMeshAgent.speed = speed;
+        _navMeshAgent.isStopped = false;
+        _navMeshAgent.SetDestination(target.position - (transform.forward));
     }
 }
 

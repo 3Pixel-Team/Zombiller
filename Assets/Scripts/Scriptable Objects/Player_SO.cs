@@ -5,6 +5,7 @@ namespace Scriptable_Objects
     [CreateAssetMenu(fileName = "Player", menuName = "Character/Player")]
     public class Player_SO : ScriptableObject
     {
-        //Waiting for writers input
+        public int health;
+        public float speed;
     }
 }
