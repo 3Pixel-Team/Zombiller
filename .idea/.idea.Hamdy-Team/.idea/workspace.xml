@@ -11,35 +11,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player Controller/DeathComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Power-Tower/Assets/Scripts/UI/PauseMenu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Power-Tower/Assets/Scripts/UI/Settings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Power-Tower/Assets/Scripts/UI/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player Controller/DeathComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameUI/Settings/Settings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Power-Tower/Assets/Scripts/UI/Settings.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player Controller/HealthComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player Controller/GunManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameUI/GameUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameUI/GamePanels.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameUI/StartGame.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameUI/RestartGameButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameUI/StartGameButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameUI/GameButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Prefabs/Zombie.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Player_SO.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Crate_SO.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player Controller/DeathComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player Controller/DamageComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Crates/CrateOpenAnimation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Zombie_SO.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Weapon_SO.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameUI/Settings/Volume.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameUI/Settings/Settings.cs" />
-      </list>
-    </option>
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameUI/Settings/Settings.cs" />
+    </changedPaths>
   </component>
   <component name="ProjectId" id="1gTUiUYkY9iVnw7d0UfJdvcYm4z" />
   <component name="ProjectViewState">
@@ -56,6 +37,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -91,6 +73,7 @@
       <workItem from="1599696741667" duration="4951000" />
       <workItem from="1599742675464" duration="125000" />
       <workItem from="1600032600766" duration="742000" />
+      <workItem from="1601254362750" duration="1348000" />
     </task>
     <servers />
   </component>
