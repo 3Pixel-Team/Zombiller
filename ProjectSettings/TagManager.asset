@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Ammo Crate
   - Bullet
+  - Health Pack
+  - Grenade
   layers:
   - Default
   - TransparentFX
